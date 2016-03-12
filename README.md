@@ -1,0 +1,1 @@
+# HKH_Shogi_client
