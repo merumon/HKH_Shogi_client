@@ -10,6 +10,11 @@ public class AutoMatchingClient : Photon.MonoBehaviour
 
     bool isConnecting;
 
+    void Awake()
+    {
+        PhotonNetwork.autoJoinLobby = true;
+    }
+
     public void StartMatching(int roomNumber, Action onMatched, Action onFailed)
     {
         if (isConnecting) return;
@@ -53,6 +58,7 @@ public class AutoMatchingClient : Photon.MonoBehaviour
     //    PhotonNetwork.JoinRandomRoom();
         Debug.Log("Client: In Lobby.");
 
+        // これだと部屋がないときエラーになるというクソ仕様
         PhotonNetwork.JoinRoom (roomNumber.ToString());
     }
 
