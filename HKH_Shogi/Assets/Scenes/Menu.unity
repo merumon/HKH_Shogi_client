@@ -365,7 +365,15 @@ Prefab:
       objectReference: {fileID: 641704347}
     - target: {fileID: 105822, guid: 5160b16ee1741454a8e6086d534a510d, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11410196, guid: 5160b16ee1741454a8e6086d534a510d, type: 2}
+      propertyPath: viewIdField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11410196, guid: 5160b16ee1741454a8e6086d534a510d, type: 2}
+      propertyPath: instantiationId
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5160b16ee1741454a8e6086d534a510d, type: 2}
